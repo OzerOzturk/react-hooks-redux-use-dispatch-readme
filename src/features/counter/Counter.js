@@ -1,5 +1,12 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { incrementCount } from "./counterSlice.js"; 
+
+
+function incrementCount() {
+  return { type: "count/increment" };
+}
+
 
 function Counter() {
   // read from the Redux store
